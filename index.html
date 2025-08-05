@@ -561,6 +561,12 @@
         .newsletter-button:hover {
             background: #45a049;
         }
+
+
+        
+
+
+
         
         @keyframes fadeIn {
             to { opacity: 1; transform: translateY(0); }
@@ -596,6 +602,84 @@
         .text-center {
             text-align: center;
         }
+
+        /* Footer Styling */
+.footer {
+  background-color: #f5f5f5;
+  color: #f5f5f5;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: #353535;
+  border-bottom: 2px solid #353535;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.member {
+  flex: 1 1 300px;
+  background-color: #1e4569;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.member h3 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.member .role {
+  font-weight: normal;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.member p {
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.member a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.member a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #999999;
+}
+
+
+
         
         /* Responsive adjustments */
         @media (min-width: 576px) {
@@ -1646,7 +1730,38 @@ export default SentryDashboard;
     <p>Our focus is on creating reliable, cost-effective energy monitoring solutions. The system is ideal for personal, academic, and research applications, with all designs open for educational use.</p>
 </div>
 -->
-
+<footer class="footer">
+  <div class="footer-container">
+    <h2><i class="fas fa-users"></i> About Sentry Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <h4>Dilisha Madushan (Team Leader)</h4>
+        <p>
+            <a href="https://www.linkedin.com/in/dilishamadushan/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a><br>
+          <a href="mailto:dilishamadushan@yahoo.com"><i class="fas fa-envelope"></i> dilishamadushan@yahoo.com</a><br>
+          <i class="fas fa-graduation-cap"></i> BSc Engineering, Faculty of Engineering, University of Ruhuna<br>
+          
+        </p>
+      </div>
+      <div class="member">
+        <h4>Gunath Kalpitha</h4>
+        <p>
+             <a href="https://www.linkedin.com/in/gunath-kalpitha/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a><br>
+          <a href="mailto:gbgunathkalpitha18@gmail.com"><i class="fas fa-envelope"></i> gbgunathkalpitha18@gmail.com</a><br>
+          <i class="fas fa-graduation-cap"></i> BSc Engineering, Faculty of Engineering, University of Ruhuna<br>
+         
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Sentry | All rights reserved.</p>
+    </div>
+  </div>
+</footer>
     <!-- AOS (Animate On Scroll) initialization -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
